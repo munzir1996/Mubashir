@@ -6,29 +6,22 @@
 
 <section class="home-slider owl-carousel" style="direction:ltr">
     <div class="slider-item" style="background-image:url(images/bg_1.jpg);" data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
-                <div class="col-md-6 text ftco-animate pl-md-5">
-                    <h1 class="mb-4">Base Construction <span>Build The Future</span></h1>
-                    <h3 class="subheading">A small river named Duden flows by their place and supplies it with the
-                        necessary regelialia</h3>
-                </div>
-            </div>
-        </div>
     </div>
-
     <div class="slider-item" style="background-image:url(images/bg_2.jpg);" data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
-                <div class="col-md-6 text ftco-animate pl-md-5">
-                    <h1 class="mb-4">We Turn Your <span>Vision Into Reality</span></h1>
-                    <h3 class="subheading">A small river named Duden flows by their place and supplies it with the
-                        necessary regelialia</h3>
-                </div>
-            </div>
-        </div>
+    </div>
+    <div class="slider-item" style="background-image:url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+    </div>
+    <div class="slider-item" style="background-image:url(images/bg_4.jpg);" data-stellar-background-ratio="0.5">
+    </div>
+    <div class="slider-item" style="background-image:url(images/bg_5.jpg);" data-stellar-background-ratio="0.5">
+    </div>
+    <div class="slider-item" style="background-image:url(images/bg_6.jpg);" data-stellar-background-ratio="0.5">
+    </div>
+    <div class="slider-item" style="background-image:url(images/bg_7.jpg);" data-stellar-background-ratio="0.5">
+    </div>
+    <div class="slider-item" style="background-image:url(images/bg_8.jpg);" data-stellar-background-ratio="0.5">
+    </div>
+    <div class="slider-item" style="background-image:url(images/bg_9.jpg);" data-stellar-background-ratio="0.5">
     </div>
 </section>
 <br><br>
@@ -54,7 +47,7 @@
                             <h3 style="color:#2F3195;">{{ $product->en_name}}</h3>
                         </a>
                         <span style="color:black;"
-                            class="position mb-2">{{str_limit(strip_tags($product->en_description) , $limit =20 , $end ='...')}}
+                            class="position mb-2">{!!str_limit(strip_tags($product->en_description) , $limit =20 , $end ='...')!!}
                         </span>
                     </div>
                 </div>
@@ -81,9 +74,9 @@
                     </div>
                     <div class="text pt-3 text-center">
                         <a href="/en-team">
-                            <h3>{{$team->en_name}}</h3>
+                            <h3 style="color:#2F3195;">{{$team->en_name}}</h3>
                         </a>
-                        <span class="position mb-2">{{$team->en_specialization}}</span>
+                        <span class="position mb-2" style="color: black;">{{$team->en_specialization}}</span>
                         <div class="faded">
                             <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
                             <ul class="ftco-social text-center">
@@ -104,37 +97,6 @@
         </div>
     </div>
 </section>
-{{-- Projects
-<section class="ftco-section ftco-no-pt ftco-no-pb">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters justify-content-center mb-5 pb-2">
-            <div class="col-md-6 text-center heading-section ftco-animate">
-                <span class="subheading">Projects</span>
-                <h2 class="mb-4">Our Projects</h2>
-            </div>
-        </div>
-
-        <div class="row no-gutters">
-            @foreach($projects as $project)
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="project">
-                    <img src="{{'images/'.$project->photo}}" class="img-fluid" alt="Colorlib Template">
-                    <div class="text">
-                        <span>{{$project->en_name}}</span>
-                        <h3><a
-                                href="/desc/{{$project->id}}">{{ str_limit(strip_tags($project->en_description) , $limit ='20' , $end = '...' )}}</a>
-                        </h3>
-                    </div>
-                    <a href="{{'images/'.$project->photo}}"
-                        class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="icon-expand"></span>
-                    </a>
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section> --}}
 @include('en-parts._numbers')
 {{-- Clients --}}
 <br>
@@ -149,7 +111,7 @@
 
         <div class="row no-gutters">
             @foreach ($clients as $client)
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="">
                     <img style="margin-left: 30%; margin-bottom: 12%;" class="img-fluid" src="{{'images/'.$client->photo}}" >
                 </div>
@@ -176,7 +138,7 @@
                                 <span class="quote d-flex align-items-center justify-content-center">
                                     <i class="icon-quote-left"></i>
                                 </span>
-                                {{str_limit(strip_tags($new->en_details) , 100 )}}
+                                {!!str_limit(strip_tags($new->en_details) , 100 )!!}
                                 @if(strLen(strip_tags($new->en_details)) > 100)
                                 <a href="/en-news/{{$new->id}}" style="font-size: 11px;"> Red more </a>
                                 @endif

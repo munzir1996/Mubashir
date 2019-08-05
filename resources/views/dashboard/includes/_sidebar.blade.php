@@ -41,6 +41,34 @@
                     <span class="title">الأخبار</span>
                 </a>
             </li>
+
+            <li class="nav-item">
+                <a href="{{route('products.index')}}" class="nav-link nav-toggle">
+                    <i class="icon-basket"></i>
+                    <span class="title">المنتجات</span>
+                </a>
+            </li>
+
+            {{-- <li class="nav-item">
+                <a href="{{route('projects.index')}}" class="nav-link nav-toggle">
+                    <i class="icon-bulb"></i>
+                    <span class="title">مشاريع</span>
+                </a>
+            </li> --}}
+
+            <li class="nav-item">
+                <a href="{{route('teams.index')}}" class="nav-link nav-toggle">
+                    <i class="icon-users"></i>
+                    <span class="title">الفريق</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{route('clients.index')}}" class="nav-link nav-toggle">
+                    <i class="icon-diamond"></i>
+                    <span class="title">العملاء</span>
+                </a>
+            </li>
             <li class="nav-item">
                 <a href="{{route('accounts.index')}}" class="nav-link nav-toggle">
                     <i class="icon-social-dribbble"></i>
@@ -78,33 +106,7 @@
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a href="{{route('products.index')}}" class="nav-link nav-toggle">
-                    <i class="icon-basket"></i>
-                    <span class="title">المنتجات</span>
-                </a>
-            </li>
 
-            <li class="nav-item">
-                <a href="{{route('projects.index')}}" class="nav-link nav-toggle">
-                    <i class="icon-bulb"></i>
-                    <span class="title">مشاريع</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a href="{{route('teams.index')}}" class="nav-link nav-toggle">
-                    <i class="icon-users"></i>
-                    <span class="title">الفريق</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a href="{{route('clients.index')}}" class="nav-link nav-toggle">
-                    <i class="icon-diamond"></i>
-                    <span class="title">العملاء</span>
-                </a>
-            </li>
 
         </ul>
         <!-- END SIDEBAR MENU -->

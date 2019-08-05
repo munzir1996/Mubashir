@@ -24,7 +24,7 @@
             <h3 style="color:#2F3195;">{{ $product->en_name}}</h3>
         </a>
             <span class="position mb-2" style="color:black">
-                {{str_limit(strip_tags($product->en_description) , $limit =20 , $end ='...')}}
+                {!!str_limit(strip_tags($product->en_description) , $limit =20 , $end ='...')!!}
             </span>
           </div>
         </div>

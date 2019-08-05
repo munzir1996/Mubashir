@@ -55,6 +55,7 @@ Auth::routes();
     Route::get('/en-support' , 'Browse\BrowseController@Ensupport');
     Route::get('/en-system' , 'Browse\BrowseController@Ensystem');
     Route::get('/en-team' , 'Browse\BrowseController@Enteam');
+    Route::get('/en-event' , 'Browse\BrowseController@Enevent');
     Route::get('/en-news/{id}' , 'Browse\BrowseController@Ennews');
     Route::get('/en-product' , 'Browse\BrowseController@Enproduct');
     Route::get('/desc/{id}' , 'Browse\BrowseController@EnDesc');

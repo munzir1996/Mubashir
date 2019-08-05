@@ -227,6 +227,13 @@ class BrowseController extends Controller
            ->withNew($new);
     }
 
+    public function Enevent()
+    {
+        $news = News::all();
+
+        return view('pages.en.event')->withNews($news);
+    }
+
     public function EnDesc($id)
     {
         $project = Project::findOrFail($id);

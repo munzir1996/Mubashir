@@ -23,7 +23,7 @@
                     <div class="card-body">
                         <h4 class="card-title"><b>{{ $new->ar_title}}</b></h4>
                         <h6 class="card-subtitle mb-2 text-muted">{{ Carbon\Carbon::parse($new->created_at)->format('M , j , Y')}}</h6>
-                        <p class="card-text">{{str_limit(strip_tags($new->ar_details) , $limit =100 , $end ='...')}}</p>
+                        <p class="card-text">{!!str_limit(strip_tags($new->ar_details) , $limit =100 , $end ='...')!!}</p>
                         <a href="/ar-news/{{$new->id}}" class="btn btn-info">عرض</a>
                     </div>
                 </div>

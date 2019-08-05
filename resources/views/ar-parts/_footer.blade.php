@@ -11,7 +11,7 @@
                   <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
               </div>
-              
+
             </div>
             <div class="col-md-5">
               <!-- here but somethng -->
@@ -21,9 +21,9 @@
           </div>
           <div class="row">
             <div class="col-md-12 text-center">
-  
+
               <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    حقوق النشر &copy; <script>document.write(new Date().getFullYear());</script> جميع حقوق النشر محفوظه ل شركة مباشر مزود من قبل محمد و منذر  
+    حقوق النشر &copy; <script>document.write(new Date().getFullYear());</script> جميع حقوق النشر محفوظه ل شركة مباشر مزود من قبل شركة Omega Team
     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
           </div>

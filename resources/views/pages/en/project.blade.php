@@ -40,7 +40,7 @@
           <img src="{{'images/'.$project->photo}}" class="img-fluid" alt="Colorlib Template">
           <div class="text">
             <span>{{$project->en_name}}</span>
-            <h3><a href="/desc/{{$project->id}}">{{ str_limit(strip_tags($project->en_description) , $limit ='20' , $end = '...' )}}</a></h3>
+            <h3><a href="/desc/{{$project->id}}">{!! str_limit(strip_tags($project->en_description) , $limit ='20' , $end = '...' )!!}</a></h3>
           </div>
           <a href="{{'images/'.$project->photo}}" class="icon image-popup d-flex justify-content-center align-items-center">
             <span class="icon-expand"></span>

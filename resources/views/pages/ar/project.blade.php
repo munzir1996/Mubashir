@@ -40,7 +40,7 @@
                     <div class="text">
                         <span>{{$project->ar_name}}</span>
                         <h3><a
-                                href="/desc/{{$project->id}}">{{ str_limit(strip_tags($project->ar_description) , $limit ='20' , $end = '...' )}}</a>
+                                href="/desc/{{$project->id}}">{!! str_limit(strip_tags($project->ar_description) , $limit ='20' , $end = '...' )!!}</a>
                         </h3>
                     </div>
                     <a href="{{'images/'.$project->photo}}"

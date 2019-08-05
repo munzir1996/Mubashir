@@ -31,7 +31,7 @@ class ContactController extends Controller
             'name'=>'required',
             'email'=>'required|email',
             'msg'=>'required',
-          ]); 
+          ]);
 
     $contact = [];
 
@@ -67,11 +67,10 @@ class ContactController extends Controller
     $contact['email'] = $request->get('email');
     $contact['subj'] = $request->get('subj');
     $contact['msg'] = $request->get('msg');
-    
+
      Mail::send(new ContactEmail($contact));
      Session::flash('success','تم ارسال  بنجاح');
     return redirect('/ar-contact');
     }
-
 
 }
